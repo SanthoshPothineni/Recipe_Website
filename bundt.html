@@ -1,0 +1,143 @@
+<!--File: bundt.html
+    GUI Assignment: Creating Your First Web Page
+    Santhosh Pothineni, UMass Lowell Computer Science, 
+    santhosh_pothineni@student.uml.edu
+    Copyright (c) 2021 by Santhosh. All rights reserved. 
+    May be freely copied or excerpted for 
+    educational purposes with credit to the author.
+    updated by SP on September 23, 2023-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bake'n Cook</title>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+    <h1>Santhosh's</h1>
+    <h1>Cooking &amp; Baking Recipes</h1>
+
+    <!--Navigation bar for website created using a list, contains links to every page and appears at the top of every page-->
+    <nav><ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="chicken.html">Chicken curry</a></li>
+        <li><a href="bundt.html">Bundt Cake</a></li>
+      </ul></nav>
+
+    <!--grid container create allows me to make to unequal columns-->
+    <div class="grid-container">
+
+      <!--First grid child is larger column on left for cooking instructions and pictures-->
+        <div class="grid-child">
+            <h2>Bundt Cake Recipe</h2>
+            <h4>Dark chocolate Bundt cake recipe</h4>
+            <img src="Img/bundt_cake.jpg" alt="cake" class="center">
+
+            <!--Numbered ordered list for directions-->
+            <ol type="1">
+              <li><p>First preheat your oven to 350 F and grease a 12-inch Bundt cake pan, butter or oil works fine. You also
+                want to gather your ingredients ensuring your milk, eggs, sour cream, and butter are at room temperature.
+                </p>
+              </li>
+              <li><p> Then in a large bowl mix together butter and sugar until the mixture becomes fluffy. This can be done
+                easily with an electric mixer at medium speed. In another bowl mix together milk and sour cream until lumps go away also add
+                vanilla extract.
+                </p>
+              </li>
+              <li><p> Then beat in the eggs to your butter-sugar mixture 1 at a time. Once it is combined add the sour cream and milk mixture
+                and stir until it is all incorporated. Then you can add the salt and baking soda to this mixture.
+                </p>
+              </li>
+              <li><p>Now slowly add in your flour and mix until it is just barely combined, then do the same with the cocoa powder. You 
+                shouldn't over-mix here or your cake will be doughy. you should also gently stir in the melted dark chocolate you don't
+                need to completely combine it.
+                </p>
+              </li>
+              <li><p> Once there are no more lumps in your batter you should pour it into your cake pan and smooth the top. Then place it in
+                the middle rack of the oven and set a timer for about 40 minutes. Check with a toothpick after the timer is up and leave for another 5 min
+                if it still comes out wet.
+                </p>
+              </li>
+              <li><p> After removing it from the oven let it cool completely and then sprinkle on your powdered sugar. It can be stored in the fridge 
+                for up to a week but it tastes best fresh.
+
+                </p>
+              </li>
+            </ol>
+        </div>
+
+        <!--Table with 3 columns Ingredients , Amount needed and a checkbox column to keep track of what ingredients you have-->
+        <div class="grid-child">
+          <table>
+            <tr>
+                <th>Ingredients</th>
+                <th>Amount</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>Unsalted Butter</td>
+                <td>1 cup or 2 sticks &lpar;room temp&rpar;</td>
+                <td><input type="checkbox">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Cane Sugar</td>
+                <td>2 cups</td>
+                <td><input type="checkbox">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Eggs</td>
+                <td>2 large &lpar;room temp&rpar;</td>
+                <td><input type="checkbox">&nbsp;</td>
+            </tr>
+            <tr>
+
+                <td>All-purpouse flour</td>
+                <td>2 cups</td>
+                <td><input type="checkbox">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Cocoa powder</td>
+                <td>1/3 cup</td>
+                <td><input type="checkbox">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Vanilla extract</td>
+                <td>1 tsp</td>
+                <td><input type="checkbox">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Sour cream</td>
+                <td>2/3 cup</td>
+                <td><input type="checkbox">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Whole milk</td>
+                <td>1.5 cups</td>
+                <td><input type="checkbox">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Baking soda</td>
+                <td>1 tsp</td>
+                <td><input type="checkbox">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Salt</td>
+                <td>1/4 tsp</td>
+                <td><input type="checkbox">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Powdered sugar</td>
+                <td>3-4 tbsps</td>
+                <td><input type="checkbox">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Dark choclate</td>
+                <td>2 oz. &lpar;melted&rpar;</td>
+                <td><input type="checkbox">&nbsp;</td>
+            </tr>
+        </table>
+        </div>
+    
+    </div>
+  </body>
+</html>

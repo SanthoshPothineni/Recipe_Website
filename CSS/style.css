@@ -1,0 +1,88 @@
+/*Sets the font and color of main header text*/
+h1 {
+    color: black;
+    text-align: center;
+    padding: 0px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
+}
+
+/*Sets the font for secondary headers*/
+h2{
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*set the background color for the webpage and the padding for the elements on the site*/
+body {
+    padding-top: 50px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    background: #f9bc62
+}
+
+/*The grid container and grid-child set up the the grid structure of the web page
+Creating two columns one larger then the other for the directions and the ingredients boxes respectively*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 1.5fr .5fr;
+    grid-gap: 20px;
+}
+
+.grid-child{
+    background-color: rgb(255, 212, 170);
+    padding: 20px;
+}
+
+/*Ul, li , li a format the list to make the nav bar at the top of the web page
+li a hover gives the color change effect when you place mous oon element of nav bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #b37305;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(255, 196, 0);
+}
+
+/*adds border to ingredients table in webpage*/
+table, th, td{
+    border-collapse: collapse;
+    border: 2px solid;
+    border-color: black;
+}
+
+/*Center the images in the webpage to the center of the column*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*format images use within order list, ie smaller and off to the left*/
+.inlist {
+    display: square;
+    float: right;
+    width: 100%
+}
+
+p{
+    font-size: 25px;
+}

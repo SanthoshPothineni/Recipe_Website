@@ -1,0 +1,164 @@
+<!--File: chicken.html
+    GUI Assignment: Creating Your First Web Page
+    Santhosh Pothineni, UMass Lowell Computer Science, 
+    santhosh_pothineni@student.uml.edu
+    Copyright (c) 2021 by Santhosh. All rights reserved. 
+    May be freely copied or excerpted for 
+    educational purposes with credit to the author.
+    updated by SP on September 26, 2023-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bake'n Cook</title>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+    <h1>Santhosh's</h1>
+    <h1>Cooking &amp; Baking Recipes</h1>
+
+    <!--Navigation bar for website created using a list, contains links to every page and appears at the top of every page-->
+    <nav><ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="chicken.html">Chicken curry</a></li>
+      <li><a href="bundt.html">Bundt Cake</a></li>
+    </ul></nav>
+
+    <!--Grid container to add 2 columns in website-->
+    <div class="grid-container">
+
+    <!--Grid child creates column first is larger and on the left and second is smaller and on the right-->
+        <div class="grid-child">
+            <h2>Chicken Curry Recipe</h2>
+            <h4>recipe for a South indian chicken curry</h4>
+        <!--numbered ordered list to add go through recipe step by step-->
+            <ol type="1">
+              <li><p>First gather your ingredients, cut the chicken into cubes. I prefer bone-in chicken thighs
+                becuase they stay soft longer then chicken breast. You can buy ginger garlic paste at store
+                or grind equal parts ginger and garlic it can be kept in the fridge for up to a week.</p>
+              </li>
+              <li>
+                <div class="grid-container">
+                  <div class="grid-child"><p>Next add the chicken to a bowl, and combine 1 tbsp of ginger-garlic paste, 1/2 tsp turmeric powder, 
+                  1 tsp red chili powder, 1 tsp garam masala, 1 tsp coriander powder, and 1 1/2 tsp salt. 
+                  As well as the juice from half a lemon. Mix and cover with plastic wrap and set aside for about 20 min or up to two hours. 
+                  I find the longer you let it marinate the better it tastes but you should be fine with 20 min as well.</p></div>
+                  <img src="Img/step1.jpg" alt="c1" class="inlist">
+                </div>
+              </li>
+              <li>
+                <div class="grid-container">
+                  <div class="grid-child"><p>Heat up the oil in the pot and add 1 tsp cumin, 1 bay leaf and sauté for 30 secs on low heat. 
+                  Then add the green chilies and diced onions and continue sautéing on medium heat until the onions start 
+                  to soften and look translucent for about 10 min. Just make sure to stir every couple of minutes and make 
+                  sure that the onions don&OpenCurlyQuote;t start to brown too much.</p></div>
+                  <img src="Img/step2.jpg" alt="c2" class="inlist">
+                </div>
+              </li>
+              <li><p>Add another tsp of ginger-garlic paste to the onions and sauté on medium heat for another 5 min. 
+                Add the chicken mixture and mix with onions and cook on medium-low heat for another 2-3 mins.</p>
+              </li>
+              <li>
+                <div class="grid-container">
+                  <div class="grid-child"><p>Add about 1/4 cup of water or just enough to cover the chicken, add cilantro, mint, and a little bit of salt to the pot, 
+                  stir and cover then cook on medium heat for about 10-15 min until the chicken is tender. During this step you can also add 
+                  some more red chili powder if you want to make it spicier. I grew up eating a lot of spicy food so I generally do this.</p></div>
+                  <img src="Img/step3.jpg" alt="c3" class="inlist">
+                </div>
+              </li>
+              <li>
+              <div class="grid-container">
+                <div class="grid-child"><p>Finally, uncover and taste and add salt as needed. Then cook off any excess water until curry reaches desired consistency. 
+                This should take about 10 min but it depends on how much water you added. You want it to not be too watery but also not too thick.
+                It normally served with rice or naan which is a type of bread.</p></div>
+                <img src="Img/finished.jpg" alt="final curry" class="inlist">
+              </div>
+              </li>
+            </ol>
+        </div>
+
+        <div class="grid-child">
+
+        <!--Table with 3 columns Ingredients , Amount needed and a checkbox column to keep track of what ingredients you have-->
+            <table>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Amount</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Onion</td>
+                    <td>1 Large or 1.5 cups diced</td>
+                    <td><input type="checkbox">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Bone-in chicken thighs</td>
+                    <td>4-6 count or 85g</td>
+                    <td><input type="checkbox">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Green chilies</td>
+                    <td>2-3 count</td>
+                    <td><input type="checkbox">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Salt</td>
+                    <td>2.5 tsps</td>
+                    <td><input type="checkbox">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Turmeric</td>
+                    <td>.5 tsp</td>
+                    <td><input type="checkbox">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Red chili powder</td>
+                    <td>2 tsps</td>
+                    <td><input type="checkbox">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Garam Masala</td>
+                    <td>1 tsp</td>
+                    <td><input type="checkbox">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Coriander powder</td>
+                    <td>2 tsps</td>
+                    <td><input type="checkbox">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Ginger garlic paste</td>
+                    <td>2 tbsps</td>
+                    <td><input type="checkbox">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Lemon juice</td>
+                    <td>1/2 a lemon</td>
+                    <td><input type="checkbox">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Canola Oil</td>
+                    <td>3-4 tbsps</td>
+                    <td><input type="checkbox">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Bay leaf</td>
+                    <td>2 count</td>
+                    <td><input type="checkbox">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Cumin</td>
+                    <td>1 tbsp</td>
+                    <td><input type="checkbox">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Cilantro and Mint leaves</td>
+                    <td>1/8 cup combined</td>
+                    <td><input type="checkbox">&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+  </body>
+</html>
